@@ -19,18 +19,18 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #0a0f14; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #0f2943; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #e87532; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #ECF0F1;
+  --default-color: #2C3E50;
+  --heading-color: #34495E;
+  --accent-color: #7F8C8D;
+  --surface-color: #BDC3C7;
+  --contrast-color: #2C3E50;
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #0a0f14;  /* The default color of the main navmenu links */
-  --nav-hover-color: #e87532; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #a5c8d6; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #0a0f14; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -151,7 +151,7 @@ h6 {
 }
 
 .header .header-container {
-  background: var(--surface-color);
+  /* background: var(--surface-color); */
   border-radius: 50px;
   padding: 5px 25px;
   /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
@@ -701,7 +701,7 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  padding: 80px 0;
+  padding: 0px 0;
   position: relative;
   overflow: hidden;
 }
@@ -799,12 +799,13 @@ section,
 
 .hero .hero-image {
   position: relative;
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 .hero .hero-image img {
   position: relative;
   z-index: 2;
+  max-height: 600px;
 }
 
 .hero .hero-image .shape-1,
