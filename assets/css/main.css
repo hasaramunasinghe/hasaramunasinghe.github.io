@@ -1000,6 +1000,63 @@ section,
   width: 1px;
 }
 
+/* Skills Tags Layout */
+.skills .skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.skills .skill-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1.25rem;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+  color: var(--heading-color);
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+}
+
+.skills .skill-tag:hover {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px color-mix(in srgb, var(--accent-color), transparent 50%);
+}
+
+.skills .skill-tag.tool-tag {
+  background-color: color-mix(in srgb, var(--heading-color), transparent 90%);
+  border-color: color-mix(in srgb, var(--heading-color), transparent 75%);
+}
+
+.skills .skill-tag.tool-tag:hover {
+  background-color: var(--heading-color);
+  color: #ffffff;
+}
+
+.skills .skill-tag.cert-tag {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 92%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 60%);
+  font-weight: 600;
+}
+
+.skills .skill-tag.cert-tag:hover {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+.skills .skill-tag i {
+  color: var(--accent-color);
+}
+
+.skills .skill-tag:hover i {
+  color: #ffffff;
+}
+
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
@@ -1101,6 +1158,14 @@ section,
 
 .resume .resume-wrapper .timeline .timeline-item .timeline-right ul li {
   padding-bottom: 12px;
+}
+
+.resume .resume-wrapper .timeline .timeline-item .timeline-right .sub-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent-color);
 }
 
 @media (max-width: 992px) {
